@@ -33,8 +33,8 @@ export default class GameInfo {
 
 
     初始化玩家和房间id(roomId, playId) {
-        this.roomId = roomId;
-        this.playId = playId;
+        this.roomId = Number(roomId);
+        this.playId = Number(playId);
     }
 
     更新房间及其房间内的所有玩家人物信息(room: GameRoom) {
@@ -49,7 +49,7 @@ export default class GameInfo {
                 }
             }
             // 找到本局敌人信息
-            if (ValueUtil.isNotEmptyOrZero(this.playerPeopleInfo.foeId)) {
+            if (ValueUtil.isNotEmptyOrZero(this.playerPeopleInfo) && ValueUtil.isNotEmptyOrZero(this.playerPeopleInfo.foeId)) {
                 for (let i = 0; i < this.roomInfo.gameRoomPlayerRelList.length; i++) {
                     let item = this.roomInfo.gameRoomPlayerRelList[i];
                     if (ValueUtil.equalNum(item.playId, this.playerPeopleInfo.foeId)) {

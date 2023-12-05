@@ -152,4 +152,8 @@ export default {
     equalNum(num1: any, num2: any): boolean {
         return Number(num1) === Number(num2);
     },
+    // 获取字符串，如果为空则显示默认字符串
+    getStrWithDefault(str: string, defaultStr: string) {
+        return this.isNotEmpty(str) ? str : defaultStr;
+    }
 }
