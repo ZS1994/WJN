@@ -1,5 +1,6 @@
-import { _decorator, Component, Node } from 'cc';
-const { ccclass, property } = _decorator;
+import {_decorator, Component, Node} from 'cc';
+
+const {ccclass, property} = _decorator;
 
 @ccclass('BtnJoinGame')
 export class BtnJoinGame extends Component {
@@ -8,7 +9,13 @@ export class BtnJoinGame extends Component {
     }
 
     update(deltaTime: number) {
-        
+
+    }
+
+    // 加入房间
+    joinRoom() {
+
     }
 }
-
+
+

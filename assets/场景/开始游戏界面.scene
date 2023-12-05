@@ -1438,7 +1438,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "创建游戏",
+    "_name": "创建房间",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -1739,7 +1739,7 @@
     },
     "component": "",
     "_componentId": "4f6c5yXqh1CUKRI5OGULUyx",
-    "handler": "",
+    "handler": "createRoom",
     "customEventData": ""
   },
   {
@@ -1756,7 +1756,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "加入游戏",
+    "_name": "加入房间",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
