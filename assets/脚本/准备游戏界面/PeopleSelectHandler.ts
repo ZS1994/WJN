@@ -3,6 +3,7 @@ import BaseHandlerService from "../公共/bas/BaseHandlerService";
 import Request from "../公共/util/Request";
 import GamePeople from "../公共/entity/GamePeople";
 import ValueUtil from "../公共/util/ValueUtil";
+import Input from '../公共/subtype/Input';
 
 const {ccclass, property} = _decorator;
 
@@ -25,6 +26,10 @@ export class PeopleSelectHandler extends BaseHandlerService {
 
     update(deltaTime: number) {
 
+    }
+
+    handWsMsgByInput(msg: Input) {
+        throw new Error('Method not implemented.');
     }
 
     初始化人物选择组件() {

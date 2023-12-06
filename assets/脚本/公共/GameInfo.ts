@@ -4,7 +4,6 @@
 import GameRoom from "./entity/GameRoom";
 import GameRoomPlayerRel from "./entity/GameRoomPlayerRel";
 import ValueUtil from "./util/ValueUtil";
-import BaseSingleton from "./bas/BaseSingleton";
 
 export default class GameInfo {
 

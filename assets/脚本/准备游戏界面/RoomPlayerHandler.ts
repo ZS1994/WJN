@@ -1,5 +1,6 @@
 import {_decorator, Component, Node, Label} from 'cc';
 import BaseHandlerService from "../公共/bas/BaseHandlerService";
+import Input from '../公共/subtype/Input';
 import ValueUtil from "../公共/util/ValueUtil";
 
 const {ccclass, property} = _decorator;
@@ -17,6 +18,11 @@ export class RoomPlayerHandler extends BaseHandlerService {
 
     update(deltaTime: number) {
     }
+
+    handWsMsgByInput(msg: Input) {
+        throw new Error('Method not implemented.');
+    }
+
 
     拿到所有布局() {
         // 拿到所有布局
